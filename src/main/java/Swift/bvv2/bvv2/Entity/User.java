@@ -1,24 +1,20 @@
 package Swift.bvv2.bvv2.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
-import java.lang.reflect.Type;
-
-
+@Entity
 @Getter
 @Setter
-@Table
-
-public class users {
+@ToString
+@Table(name="users")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String fullName;
     private String email;
     private String password;
-    private String conformPassword;
 }
