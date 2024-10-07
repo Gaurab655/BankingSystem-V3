@@ -61,8 +61,5 @@ public class myController {
         sessionStatus.setComplete();
         return "redirect:/index";
     }
-    //test test test
-//    /111
-    //test-tr
-    //test test test
+
 }
